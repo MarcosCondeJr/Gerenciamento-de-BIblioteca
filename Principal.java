@@ -19,56 +19,50 @@ public class principal {
                 case 1:
                     clear.limpar();
                     livro1.exibirDetalhes();
-                    
-                    System.out.println("\n1- Voltar   2 - Sair");
+
+                    System.out.println("\nInsira qualquer número para voltar" +
+                                       "\n           4 - Sair");
                     opcao = ent.nextInt();
-                    
-                        if (opcao == 1){
-                            clear.limpar();
-                            tela.telaInicio();
-                        }else if(opcao == 2){
+
+                        if (opcao == 4){
                             clear.limpar();
                             System.out.println("Finalizando programa....");
                         }else{
                             clear.limpar();
-                            System.out.println("Opção inválida");
-                            livro1.exibirDetalhes();
+                            tela.telaInicio();
                         }
                     break;
                 case 2:
                     clear.limpar();
                     livro1.emprestar();
-                    
-                    System.out.println("Livro emprestado!\n" + "\n1 - Voltar  2- Sair");
-                    
-                        if (opcao == 1){
-                            clear.limpar();
-                            tela.telaInicio();
-                        }else if(opcao == 2){
+
+                    System.out.println("Livro Alugado!\n" +
+                                       "\nInsira qualquer número para voltar" +
+                                       "\n           4 - Sair");
+                    opcao = ent.nextInt();
+
+                        if (opcao == 4){
                             clear.limpar();
                             System.out.println("Finalizando programa....");
                         }else{
                             clear.limpar();
-                            System.out.println("Opção inválida");
-                            livro1.emprestar();
+                            tela.telaInicio();
                         }
                     break;
                 case 3:
                     clear.limpar();
                     livro1.devolver();
-                    
-                    System.out.println("Livro Devolvido!\n" + "\n1 - Voltar");
-                        
-                        if (opcao == 1){
-                            clear.limpar();
-                            tela.telaInicio();
-                        }else if(opcao == 2){
+
+                    System.out.println("Livro Devolvido!\n" +
+                                       "\nInsira qualquer número para voltar" +
+                                       "\n           4 - Sair");
+
+                        if (opcao == 4){
                             clear.limpar();
                             System.out.println("Finalizando programa....");
                         }else{
                             clear.limpar();
-                            System.out.println("Opção inválida");
-                            livro1.devolver();
+                            tela.telaInicio();
                         }
                     break;
             }
